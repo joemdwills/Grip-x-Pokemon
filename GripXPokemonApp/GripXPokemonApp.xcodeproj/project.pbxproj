@@ -14,6 +14,7 @@
 		0E665921282F14F10040CF42 /* GripXPokemonAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E665920282F14F10040CF42 /* GripXPokemonAppTests.swift */; };
 		0E66592B282F14F10040CF42 /* GripXPokemonAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E66592A282F14F10040CF42 /* GripXPokemonAppUITests.swift */; };
 		0E66592D282F14F10040CF42 /* GripXPokemonAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E66592C282F14F10040CF42 /* GripXPokemonAppUITestsLaunchTests.swift */; };
+		0E665942282FEE640040CF42 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E665941282FEE640040CF42 /* APICall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		0E665926282F14F10040CF42 /* GripXPokemonAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GripXPokemonAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E66592A282F14F10040CF42 /* GripXPokemonAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GripXPokemonAppUITests.swift; sourceTree = "<group>"; };
 		0E66592C282F14F10040CF42 /* GripXPokemonAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GripXPokemonAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0E665941282FEE640040CF42 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		0E66593A282F15AC0040CF42 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				0E665941282FEE640040CF42 /* APICall.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			files = (
 				0E665912282F14EF0040CF42 /* ListView.swift in Sources */,
 				0E665910282F14EF0040CF42 /* GripXPokemonAppApp.swift in Sources */,
+				0E665942282FEE640040CF42 /* APICall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
