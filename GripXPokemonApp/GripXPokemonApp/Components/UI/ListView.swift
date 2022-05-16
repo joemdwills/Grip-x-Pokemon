@@ -26,9 +26,10 @@ struct ListView: View {
                         List {
                             ForEach(pokemonResults, id:  \.url) { pokemon in
                                 NavigationLink {
-                                    
+                                    DetailView(viewModel: DetailViewModel(for: pokemon.name!, pokemonAPI: pokemonAPI))
                                 } label: {
                                     Text(pokemon.name!)
+                                        .textCase(.uppercase)
                                 }
                             }
                         }
@@ -49,7 +50,8 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView(viewModel: ListViewModel(pokemonAPI: PokemonAPI()))
-            .environmentObject(PokemonAPI())
+        let pokemonAPI = PokemonAPI()
+        ListView(viewModel: ListViewModel(pokemonAPI: pokemonAPI))
+            .environmentObject(pokemonAPI)
     }
 }
