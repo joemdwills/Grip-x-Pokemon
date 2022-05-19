@@ -8,29 +8,27 @@ import PokemonAPI
 
 import SwiftUI
 
-//enum PokemonType {
-//    typealias RawValue = Color
-//
-//    case normal = .gray
-//    case fire = .orange
-//    case water = .blue
-//    case grass, bug = .green
-//
-//}
-
 struct TypeView: View {
-//    var types: [String]
+    var types: [String] = ["fire", "ground"]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text("Type")
+                .fontWeight(.bold)
+            Spacer()
+            ForEach(types, id: \.self) { type in
+                Text(type)
+                    .textCase(.uppercase)
+            }
+        }
     }
     
     init() { }
     
-//    init(pokemon: PKMPokemon) {
-//        pokemon.types.map {
-//            self.types.append($0.type.name)
-//        }
-//    }
+    init(pokemon: PKMPokemon) {
+        self.types = pokemon.types?.compactMap({ object in
+            return object.type?.name
+        }) ?? ["unknown type"]
+    }
 }
 
 struct TypeView_Previews: PreviewProvider {

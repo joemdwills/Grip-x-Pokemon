@@ -21,11 +21,13 @@ struct DetailView: View {
             case .loaded:
                 if let pokemon = viewModel.pokemon {
                     ScrollView {
-                        VStack(spacing: 1) {
+                        VStack(spacing: 5) {
                             NameView(pokemon: pokemon)
                             SpritesView(pokemon: pokemon)
                             IDView(pokemon: pokemon)
-                            // Type View
+                            Spacer()
+                            TypeView(pokemon: pokemon)
+                            Spacer()
                             StatsView(pokemon: pokemon)
                             Spacer()
                         }
@@ -48,6 +50,6 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         let pokemonAPI = PokemonAPI()
-        DetailView(viewModel: DetailViewModel(for: "charmander", pokemonAPI: pokemonAPI))
+        DetailView(viewModel: DetailViewModel(for: "bulbasaur", pokemonAPI: pokemonAPI))
     }
 }

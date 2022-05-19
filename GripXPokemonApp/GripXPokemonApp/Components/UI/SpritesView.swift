@@ -23,6 +23,7 @@ struct SpritesView: View {
                         .frame(width: 200, height: 200)
                 } placeholder: {
                     ProgressView()
+                        .frame(width: 200, height: 200)
                 }
                 AsyncImage(url: URL(string: frontShinyImage)) { image in
                     image
@@ -31,6 +32,7 @@ struct SpritesView: View {
                         .frame(width: 200, height: 200)
                 } placeholder: {
                     ProgressView()
+                        .frame(width: 200, height: 200)
                 }
             }
         }
@@ -43,6 +45,8 @@ struct SpritesView: View {
         guard let frontShinyImage = pokemon.sprites?.frontShiny else { return }
         self.frontImage = frontImage
         self.frontShinyImage = frontShinyImage
+        
+        
     }
 }
 

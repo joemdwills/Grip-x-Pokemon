@@ -23,7 +23,7 @@ struct IDView: View {
                 .fontWeight(.light)
         }
         .font(.headline)
-        .padding(5)
+        .padding(10)
         .background(.gray.opacity(0.1))
         .clipShape(RoundedRectangle(cornerRadius: 10))
     }
