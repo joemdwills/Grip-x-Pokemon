@@ -35,12 +35,13 @@ The application currently doesn't implement any logic to store the data locally 
 ### Pros:
 - Application size is small
 - App will show latest data from the API (currently no way to track any changes made in the API)
+- Easy to implement an enum to switch views based on the status of the Asynchronous methods
 
 ### Cons:
 - User gets a bad experience when using the App with poor or no internet connection
 
 # Personal Review
-Overall, I feel the application does what is required by the brief giving a user an ability to look at the vast amount of Pokémon and then finding out more detail when they select one from a list. However, there is always room for improvement and therefore if I were to take this to v2 I would implement the following:
+Overall, I feel the application does what is required by the brief giving a user an ability to look at the vast amount of Pokémon and then finding out more detail when they select one from a list. Using native components means the app responds to system settings such as Light/Dark mode and adjusts UI accordingly. However, there is always room for improvement and therefore if I were to take this to v2 I would implement the following:
 
 ## Add a CoreData Model
 - So that users would be able to use the app without internet after an initial set of requests

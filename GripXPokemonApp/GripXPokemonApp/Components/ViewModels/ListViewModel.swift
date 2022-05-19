@@ -20,7 +20,7 @@ import SwiftUI
     @Published var pagedObject: PKMPagedObject<PKMPokemon>?
     
     // UI Data
-    var title: String = "Grip X Pokemon"
+    var title: String = "Grip X Pokémon"
     var error: Error?
     
     init(pokemonAPI: PokemonAPI) {
