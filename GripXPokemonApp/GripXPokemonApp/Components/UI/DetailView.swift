@@ -14,26 +14,23 @@ struct DetailView: View {
     
     
     var body: some View {
-        Group {
+        VStack {
             switch viewModel.loadingState {
             case .loading:
                 Text("Loading List")
             case .loaded:
                 if let pokemon = viewModel.pokemon {
-                    VStack {
-                        NameView(pokemon: pokemon)
-                        SpritesView(pokemon: pokemon)
-                        IDView(pokemon: pokemon)
-                        // Type View
-                        HStack {
-                            Text("Stats")
-                                .fontWeight(.bold)
-                            
+                    ScrollView {
+                        VStack(spacing: 1) {
+                            NameView(pokemon: pokemon)
+                            SpritesView(pokemon: pokemon)
+                            IDView(pokemon: pokemon)
+                            // Type View
+                            StatsView(pokemon: pokemon)
                             Spacer()
                         }
-                        .padding()
-                        Spacer()
                     }
+                    .padding()
                 }
             case .failed:
                 if let error = viewModel.error {
@@ -41,6 +38,7 @@ struct DetailView: View {
                 }
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
         .task {
             await viewModel.fetchPokemon()
         }

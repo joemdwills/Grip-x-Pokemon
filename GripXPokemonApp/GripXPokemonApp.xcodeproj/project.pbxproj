@@ -22,6 +22,9 @@
 		0E6659692832F4750040CF42 /* SpritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6659682832F4750040CF42 /* SpritesView.swift */; };
 		0E66596B2832FBB00040CF42 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E66596A2832FBB00040CF42 /* NameView.swift */; };
 		0E66596D283302A90040CF42 /* IDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E66596C283302A90040CF42 /* IDView.swift */; };
+		0E665970283315670040CF42 /* Pixeboy-z8XGD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E66596F283315670040CF42 /* Pixeboy-z8XGD.ttf */; };
+		0E6659732833BC850040CF42 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6659722833BC850040CF42 /* StatsView.swift */; };
+		0E6659752833D1FF0040CF42 /* TypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6659742833D1FF0040CF42 /* TypeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,10 @@
 		0E6659682832F4750040CF42 /* SpritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritesView.swift; sourceTree = "<group>"; };
 		0E66596A2832FBB00040CF42 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		0E66596C283302A90040CF42 /* IDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDView.swift; sourceTree = "<group>"; };
+		0E66596F283315670040CF42 /* Pixeboy-z8XGD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pixeboy-z8XGD.ttf"; sourceTree = "<group>"; };
+		0E665971283315A20040CF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0E6659722833BC850040CF42 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		0E6659742833D1FF0040CF42 /* TypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +117,7 @@
 		0E66590E282F14EF0040CF42 /* GripXPokemonApp */ = {
 			isa = PBXGroup;
 			children = (
+				0E665971283315A20040CF42 /* Info.plist */,
 				0E66590F282F14EF0040CF42 /* GripXPokemonAppApp.swift */,
 				0E66593F282F16380040CF42 /* Components */,
 				0E665939282F15A40040CF42 /* Model */,
@@ -179,11 +187,13 @@
 		0E66593D282F15EE0040CF42 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				0E665911282F14EF0040CF42 /* ListView.swift */,
 				0E6659622832E1860040CF42 /* DetailView.swift */,
-				0E6659682832F4750040CF42 /* SpritesView.swift */,
-				0E66596A2832FBB00040CF42 /* NameView.swift */,
 				0E66596C283302A90040CF42 /* IDView.swift */,
+				0E665911282F14EF0040CF42 /* ListView.swift */,
+				0E66596A2832FBB00040CF42 /* NameView.swift */,
+				0E6659682832F4750040CF42 /* SpritesView.swift */,
+				0E6659722833BC850040CF42 /* StatsView.swift */,
+				0E6659742833D1FF0040CF42 /* TypeView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -209,9 +219,18 @@
 		0E665940282F166E0040CF42 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0E66596E283315530040CF42 /* Font */,
 				0E665913282F14F10040CF42 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0E66596E283315530040CF42 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0E66596F283315670040CF42 /* Pixeboy-z8XGD.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +345,7 @@
 			files = (
 				0E665917282F14F10040CF42 /* Preview Assets.xcassets in Resources */,
 				0E665914282F14F10040CF42 /* Assets.xcassets in Resources */,
+				0E665970283315670040CF42 /* Pixeboy-z8XGD.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +375,9 @@
 				0E665910282F14EF0040CF42 /* GripXPokemonAppApp.swift in Sources */,
 				0E66596D283302A90040CF42 /* IDView.swift in Sources */,
 				0E66594D282FFD400040CF42 /* ListViewModel.swift in Sources */,
+				0E6659752833D1FF0040CF42 /* TypeView.swift in Sources */,
 				0E6659632832E1860040CF42 /* DetailView.swift in Sources */,
+				0E6659732833BC850040CF42 /* StatsView.swift in Sources */,
 				0E66596B2832FBB00040CF42 /* NameView.swift in Sources */,
 				0E6659692832F4750040CF42 /* SpritesView.swift in Sources */,
 				0E66594B282FFCF60040CF42 /* PokemonAPI+.swift in Sources */,
@@ -520,11 +542,14 @@
 				DEVELOPMENT_TEAM = H54GKQTW33;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GripXPokemonApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GripXPokemon;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,11 +574,14 @@
 				DEVELOPMENT_TEAM = H54GKQTW33;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GripXPokemonApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GripXPokemon;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

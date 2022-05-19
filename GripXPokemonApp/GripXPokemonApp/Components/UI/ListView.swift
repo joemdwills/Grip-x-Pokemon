@@ -30,6 +30,7 @@ struct ListView: View {
                                 } label: {
                                     Text(pokemon.name!)
                                         .textCase(.uppercase)
+                                        .accessibilityLabel(pokemon.name!)
                                 }
                             }
                         }
@@ -44,6 +45,8 @@ struct ListView: View {
                 await viewModel.fetchPokemonList()
             }
             .navigationTitle(viewModel.title)
+            .navigationBarTitleDisplayMode(.inline)
+            .accessibilityLabel(viewModel.title)
         }
     }
 }

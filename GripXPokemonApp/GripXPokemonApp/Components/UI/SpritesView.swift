@@ -11,9 +11,7 @@ import SwiftUI
 
 struct SpritesView: View {
     private var frontImage: String = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
-    private var backImage: String = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/4.png"
     private var frontShinyImage: String = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/4.png"
-    private var backShinyImage: String = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/4.png"
     
     var body: some View {
         ScrollView(.horizontal) {
@@ -22,15 +20,7 @@ struct SpritesView: View {
                     image
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 250, height: 250)
-                } placeholder: {
-                    ProgressView()
-                }
-                AsyncImage(url: URL(string: backImage)) { image in
-                    image
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 250, height: 250)
+                        .frame(width: 200, height: 200)
                 } placeholder: {
                     ProgressView()
                 }
@@ -38,30 +28,21 @@ struct SpritesView: View {
                     image
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 250, height: 250)
-                } placeholder: {
-                    ProgressView()
-                }
-                AsyncImage(url: URL(string: backShinyImage)) { image in
-                    image
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 250, height: 250)
+                        .frame(width: 200, height: 200)
                 } placeholder: {
                     ProgressView()
                 }
             }
         }
-        .padding()
     }
     
     init() { }
     
     init(pokemon: PKMPokemon) {
-        self.frontImage = pokemon.sprites?.frontDefault ?? "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
-        self.backImage = pokemon.sprites?.backDefault ?? "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/4.png"
-        self.frontShinyImage = pokemon.sprites?.frontShiny ?? "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/4.png"
-        self.backShinyImage = pokemon.sprites?.backShiny ?? "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/4.png"
+        guard let frontImage = pokemon.sprites?.frontDefault else { return }
+        guard let frontShinyImage = pokemon.sprites?.frontShiny else { return }
+        self.frontImage = frontImage
+        self.frontShinyImage = frontShinyImage
     }
 }
 
