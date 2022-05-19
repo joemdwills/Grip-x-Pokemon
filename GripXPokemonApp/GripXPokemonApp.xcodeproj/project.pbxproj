@@ -14,6 +14,17 @@
 		0E665921282F14F10040CF42 /* GripXPokemonAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E665920282F14F10040CF42 /* GripXPokemonAppTests.swift */; };
 		0E66592B282F14F10040CF42 /* GripXPokemonAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E66592A282F14F10040CF42 /* GripXPokemonAppUITests.swift */; };
 		0E66592D282F14F10040CF42 /* GripXPokemonAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E66592C282F14F10040CF42 /* GripXPokemonAppUITestsLaunchTests.swift */; };
+		0E66594B282FFCF60040CF42 /* PokemonAPI+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E66594A282FFCF60040CF42 /* PokemonAPI+.swift */; };
+		0E66594D282FFD400040CF42 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E66594C282FFD400040CF42 /* ListViewModel.swift */; };
+		0E66595F2832B0680040CF42 /* PokemonAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 0E66595E2832B0680040CF42 /* PokemonAPI */; };
+		0E6659632832E1860040CF42 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6659622832E1860040CF42 /* DetailView.swift */; };
+		0E6659672832E1F70040CF42 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6659662832E1F70040CF42 /* DetailViewModel.swift */; };
+		0E6659692832F4750040CF42 /* SpritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6659682832F4750040CF42 /* SpritesView.swift */; };
+		0E66596B2832FBB00040CF42 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E66596A2832FBB00040CF42 /* NameView.swift */; };
+		0E66596D283302A90040CF42 /* IDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E66596C283302A90040CF42 /* IDView.swift */; };
+		0E665970283315670040CF42 /* Pixeboy-z8XGD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E66596F283315670040CF42 /* Pixeboy-z8XGD.ttf */; };
+		0E6659732833BC850040CF42 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6659722833BC850040CF42 /* StatsView.swift */; };
+		0E6659752833D1FF0040CF42 /* TypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6659742833D1FF0040CF42 /* TypeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,17 @@
 		0E665926282F14F10040CF42 /* GripXPokemonAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GripXPokemonAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E66592A282F14F10040CF42 /* GripXPokemonAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GripXPokemonAppUITests.swift; sourceTree = "<group>"; };
 		0E66592C282F14F10040CF42 /* GripXPokemonAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GripXPokemonAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0E66594A282FFCF60040CF42 /* PokemonAPI+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PokemonAPI+.swift"; sourceTree = "<group>"; };
+		0E66594C282FFD400040CF42 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		0E6659622832E1860040CF42 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		0E6659662832E1F70040CF42 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		0E6659682832F4750040CF42 /* SpritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritesView.swift; sourceTree = "<group>"; };
+		0E66596A2832FBB00040CF42 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		0E66596C283302A90040CF42 /* IDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDView.swift; sourceTree = "<group>"; };
+		0E66596F283315670040CF42 /* Pixeboy-z8XGD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pixeboy-z8XGD.ttf"; sourceTree = "<group>"; };
+		0E665971283315A20040CF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0E6659722833BC850040CF42 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		0E6659742833D1FF0040CF42 /* TypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E66595F2832B0680040CF42 /* PokemonAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +117,7 @@
 		0E66590E282F14EF0040CF42 /* GripXPokemonApp */ = {
 			isa = PBXGroup;
 			children = (
+				0E665971283315A20040CF42 /* Info.plist */,
 				0E66590F282F14EF0040CF42 /* GripXPokemonAppApp.swift */,
 				0E66593F282F16380040CF42 /* Components */,
 				0E665939282F15A40040CF42 /* Model */,
@@ -155,6 +179,7 @@
 		0E66593C282F15B90040CF42 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				0E66594A282FFCF60040CF42 /* PokemonAPI+.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -162,7 +187,13 @@
 		0E66593D282F15EE0040CF42 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0E6659622832E1860040CF42 /* DetailView.swift */,
+				0E66596C283302A90040CF42 /* IDView.swift */,
 				0E665911282F14EF0040CF42 /* ListView.swift */,
+				0E66596A2832FBB00040CF42 /* NameView.swift */,
+				0E6659682832F4750040CF42 /* SpritesView.swift */,
+				0E6659722833BC850040CF42 /* StatsView.swift */,
+				0E6659742833D1FF0040CF42 /* TypeView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -170,6 +201,8 @@
 		0E66593E282F16000040CF42 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0E66594C282FFD400040CF42 /* ListViewModel.swift */,
+				0E6659662832E1F70040CF42 /* DetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -186,9 +219,18 @@
 		0E665940282F166E0040CF42 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0E66596E283315530040CF42 /* Font */,
 				0E665913282F14F10040CF42 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0E66596E283315530040CF42 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0E66596F283315670040CF42 /* Pixeboy-z8XGD.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +249,9 @@
 			dependencies = (
 			);
 			name = GripXPokemonApp;
+			packageProductDependencies = (
+				0E66595E2832B0680040CF42 /* PokemonAPI */,
+			);
 			productName = GripXPokemonApp;
 			productReference = 0E66590C282F14EF0040CF42 /* GripXPokemonApp.app */;
 			productType = "com.apple.product-type.application";
@@ -279,6 +324,9 @@
 				Base,
 			);
 			mainGroup = 0E665903282F14EF0040CF42;
+			packageReferences = (
+				0E66595D2832B0680040CF42 /* XCRemoteSwiftPackageReference "PokemonAPI" */,
+			);
 			productRefGroup = 0E66590D282F14EF0040CF42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -297,6 +345,7 @@
 			files = (
 				0E665917282F14F10040CF42 /* Preview Assets.xcassets in Resources */,
 				0E665914282F14F10040CF42 /* Assets.xcassets in Resources */,
+				0E665970283315670040CF42 /* Pixeboy-z8XGD.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +371,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E665912282F14EF0040CF42 /* ListView.swift in Sources */,
+				0E6659672832E1F70040CF42 /* DetailViewModel.swift in Sources */,
 				0E665910282F14EF0040CF42 /* GripXPokemonAppApp.swift in Sources */,
+				0E66596D283302A90040CF42 /* IDView.swift in Sources */,
+				0E66594D282FFD400040CF42 /* ListViewModel.swift in Sources */,
+				0E6659752833D1FF0040CF42 /* TypeView.swift in Sources */,
+				0E6659632832E1860040CF42 /* DetailView.swift in Sources */,
+				0E6659732833BC850040CF42 /* StatsView.swift in Sources */,
+				0E66596B2832FBB00040CF42 /* NameView.swift in Sources */,
+				0E6659692832F4750040CF42 /* SpritesView.swift in Sources */,
+				0E66594B282FFCF60040CF42 /* PokemonAPI+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,11 +542,14 @@
 				DEVELOPMENT_TEAM = H54GKQTW33;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GripXPokemonApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GripXPokemon;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,11 +574,14 @@
 				DEVELOPMENT_TEAM = H54GKQTW33;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GripXPokemonApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GripXPokemon;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -647,6 +711,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E66595D2832B0680040CF42 /* XCRemoteSwiftPackageReference "PokemonAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kinkofer/PokemonAPI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E66595E2832B0680040CF42 /* PokemonAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E66595D2832B0680040CF42 /* XCRemoteSwiftPackageReference "PokemonAPI" */;
+			productName = PokemonAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E665904282F14EF0040CF42 /* Project object */;
 }
