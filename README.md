@@ -39,6 +39,7 @@ The application currently doesn't implement any logic to store the data locally 
 
 ### Cons:
 - User gets a bad experience when using the App with poor or no internet connection
+- The current implementation will show Charmander as a default rather than an anonymous avatar when a Pokémon object has sprites that are null
 
 # Personal Review
 Overall, I feel the application does what is required by the brief giving a user an ability to look at the vast amount of Pokémon and then finding out more detail when they select one from a list. Using native components means the app responds to system settings such as Light/Dark mode and adjusts UI accordingly. However, there is always room for improvement and therefore if I were to take this to v2 I would implement the following:

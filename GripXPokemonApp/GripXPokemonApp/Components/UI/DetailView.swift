@@ -50,6 +50,6 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         let pokemonAPI = PokemonAPI()
-        DetailView(viewModel: DetailViewModel(for: "bulbasaur", pokemonAPI: pokemonAPI))
+        DetailView(viewModel: DetailViewModel(for: "charmander", pokemonAPI: pokemonAPI))
     }
 }
