@@ -9,16 +9,24 @@ import PokemonAPI
 import SwiftUI
 
 struct TypeView: View {
-    var types: [String] = ["fire", "ground"]
+    private var types: [String] = ["fire", "ground"]
+    private var typesString: String {
+        types.joined(separator: ", ")
+    }
+    
     var body: some View {
         HStack {
             Text("Type")
                 .fontWeight(.bold)
             Spacer()
-            ForEach(types, id: \.self) { type in
-                Text(type)
-                    .textCase(.uppercase)
-            }
+            
+            Text(typesString)
+                .textCase(.uppercase)
+            
+//            ForEach(types, id: \.self) { type in
+//                Text(type)
+//                    .textCase(.uppercase)
+//            }
         }
     }
     
