@@ -51,6 +51,8 @@ Overall, I feel the application does what is required by the brief giving a user
 
 A CoreData Model should then enable me to do the following
 
+![v2.0.0 ListView](https://github.com/joemdwills/Grip-x-Pokemon/blob/develop/README-Assets/v2%20List%20View.png?raw=true "Desired v2.0.0 ListView")
+
 ## Search Field (by name or type)
 Adding the ManagedObjectContext to the List view would enable me to query the data model with by either the Pokémon Name or by Type, giving the user a better experience.
 
