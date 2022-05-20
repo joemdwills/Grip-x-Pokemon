@@ -21,9 +21,16 @@ struct StatView: View {
                     Text(name + ":")
                 }
                 .frame(maxWidth: 75)
-                Rectangle()
-                    .frame(width: CGFloat(Double(stat) * 1.5), height: 10)
-                    .foregroundColor(statColour.opacity(0.75))
+                ZStack(alignment: .leading) {
+                    RoundedRectangle(cornerRadius: CGFloat(5))
+                        .frame(width: 230, height: 10)
+                        .foregroundColor(.gray.opacity(0.1))
+                    
+                    RoundedRectangle(cornerRadius: CGFloat(5))
+                        .frame(width: CGFloat(Double(stat) * 1.5), height: 10)
+                        .foregroundColor(statColour.opacity(0.75))
+                }
+                
                 Spacer()
                 Text("\(stat)")
             }
